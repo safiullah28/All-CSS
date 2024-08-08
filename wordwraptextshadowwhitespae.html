@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word wrap text shadow white space</title>
+    <style>
+        div {
+            width: 300px;
+            /* padding: 25px; */
+            border: 3px solid rebeccapurple;
+            height: 300px;
+            /* no wrap show the paragaph in single line with overflow */
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            /* Pre show the spaces in text editor spaces */
+            /* white-space: pre; */
+            /* preline  :  it shows spaces and enters of text editor*/
+            /* white-space: pre-line; */
+            /* wrap */
+            /* white-space: wrap; */
+        }
+        
+        div p {
+            /* word wrap breaks the word in multiple lines */
+            /* word-wrap: break-word; */
+            /* word-break: use to break every word longer than a line*/
+            /* word-break: break-all; */
+            /* Text shadow */
+        }
+        
+        div h1 {
+            /* text shadow : x y blur color */
+            /* text-shadow: 3px 3px 10px orangered; */
+            /* for multiple shadow */
+            /* text-shadow: 3px 3px 10px orangered, 6px 6px blueviolet; */
+            /* font-style: italic; */
+        }
+        
+        div p {
+            /* text overflow */
+            white-space: nowrap;
+            /* ellipsis shows the dot at the last of paragrpah */
+            /* text-overflow: ellipsis; */
+            text-overflow: "[... ]";
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>SAFIULLAH</h1>
+        <p>Lorem ipsum dolor sitttttttttttttttttttttttttttttttrrrrrrrrrrrrrroooooooooooooooooooooooooooo amet consecteturrrrrrrrrrrr adipisicing elit Tempora ipsa placeat maxime voluptatum nobis laudantium delectus nesciunt, alias laborum quisquam impedit
+            inventore dignissimos a ducimus nostrum accusantium adipisci animi non ad nulla, aperiam veritatis. Nisi ea quisquam adipisci tempore? Quasi aliquid nostrum odit eligendi ex vel assumenda magni aspernatur tenetur.</p>
+    </div>
+</body>
+
+</html>

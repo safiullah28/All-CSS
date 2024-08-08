@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        #wrapper {
+            border: 1px solid black;
+            width: 1000px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: slategray;
+        }
+        
+        #header {
+            background-color: crimson;
+            height: 100px;
+        }
+        
+        #header h1 {
+            padding: 30px;
+            margin: 0px;
+        }
+        
+        #menu {
+            background-color: lightsalmon;
+        }
+        
+        #menu ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #menu li {
+            display: inline-block;
+        }
+        
+        #menu li a {
+            display: block;
+            padding: 10px 13px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        #content {
+            width: 800px;
+            float: left;
+            min-height: 500px;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        
+        #sidebar {
+            background-color: lightblue;
+            width: 200px;
+            float: right;
+            min-height: 500px;
+        }
+        
+        #sidebar li {
+            list-style-type: none;
+        }
+        
+        #sidebar a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #footer {
+            background-color: lightsalmon;
+            clear: both;
+            height: 50px;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            #wrapper {
+                width: 800px;
+            }
+        }
+        
+        @media screen and (max-width: 810px) {
+            #wrapper {
+                width: 500px;
+            }
+            #content {
+                width: 80%;
+            }
+            #sidebar {
+                width: 1%;
+            }
+        }
+        
+        @media screen and (max-width: 510px) {
+            #wrapper {
+                width: auto;
+            }
+            #content {
+                width: auto;
+                float: none
+            }
+            #sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>
+                Ignite
+            </h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="">home</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2> design Basic Layout </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quod. Totam excepturi autem, nam exercitationem rem recusandae laboriosam necessitatibus eum accusamus corporis magnam, modi voluptatem sed, incidunt ex laudantium? Eaque officia
+                impedit laudantium adipisci, qui quae consequuntur cupiditate quisquam fugit omnis quaerat culpa, temporibus repudiandae? Atque blanditiis modi doloremque ipsa.</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">about Us</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">Ignite@copyright 2026</div>
+    </div>
+</body>
+
+</html>

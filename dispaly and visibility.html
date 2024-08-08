@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and visibility</title>
+</head>
+<style>
+    ul {
+        border: 2px solid black;
+        /* visibility */
+        /* visibility: hidden; */
+        /* collapse is used in tables */
+    }
+    
+    li {
+        border: 1px solid black;
+        display: inline;
+        /* display: inline-block; */
+    }
+    
+    span {
+        border: 1px solid black;
+        /* If display block not used with span then width and padding and margin not work on span */
+        /* display: block; */
+        width: 500px;
+        padding: 10px;
+        margin: 20px;
+        /* for width, margin and padding to work in a line then inline block is used */
+        /* display: inline-block; */
+        /* list item : make spans or any other tags a list with block*/
+        display: list-item;
+    }
+    
+    a {
+        display: block;
+        border: 1px solid #000;
+        width: 500px;
+        padding: 10px;
+        margin: 20px;
+    }
+</style>
+
+<body>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <span>one</span><span>two</span><span>three</span><span>foure</span><span>five</span>
+
+    <a href="">first</a><a href="">second</a><a href="">third</a><a href="">four</a><a href="">five</a>
+</body>
+
+</html>
